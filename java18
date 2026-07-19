@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+    static int count(int n){
+        int powerOf5=5;
+        int countb =0;
+     while(powerOf5>0){
+        countb+=(n/powerOf5);
+        powerOf5*=5;
+     }
+     
+     return countb;
+    }
+    
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	 System.out.print(count(n));
+		
+	}
+}
