@@ -1,0 +1,28 @@
+import java.util.*;
+class Main{
+    static int main(int a,int b){
+        int c=a*b;
+        while(a!=0&&b!=0){
+        if(a>b){
+            a=a%b;
+        }
+        else{
+            b=b%a;
+        }
+        }
+        if(a!=0){
+         a=c/a;
+            return a;
+        }
+        else{
+            b=c/b;
+            return b;
+        }
+    }
+    static public void main(String[]args){
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        System.out.print(main(a,b));
+    }
+}
