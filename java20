@@ -7,14 +7,14 @@ public class Main
      while(a!=b){   
      if(a>b){
          a=a-b;
-         return a;
+    
      }
      else{
          b=b-a;
-         return b;
+       
      }
      }
-     return 1;
+     return a;
     }
      
 	public static void main(String[] args) {
