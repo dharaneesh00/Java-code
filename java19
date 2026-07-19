@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+    static int Gcd(int a,int b){
+        int cc=0;
+        int min=0;
+        
+     if(a<b){
+         min=a;
+     }
+     else{
+         min=b;
+     }
+     for(int i=min;i>=1;i--){
+         if(a%i==0&&b%i==0){
+          cc=i;
+          break;
+         }
+     }
+       return cc;
+     }
+     
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+				int b=sc.nextInt();
+
+	 System.out.print(Gcd(a,b));
+		
+	}
+}
