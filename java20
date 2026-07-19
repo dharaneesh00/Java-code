@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+    static int Gcd(int a,int b){
+        int cc=0;
+        int max=0;
+     while(a!=b){   
+     if(a>b){
+         a=a-b;
+         return a;
+     }
+     else{
+         b=b-a;
+         return b;
+     }
+     }
+     return 1;
+    }
+     
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+				int b=sc.nextInt();
+
+	 System.out.print(Gcd(a,b));
+		
+	}
+}
