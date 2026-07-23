@@ -1,0 +1,34 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] a = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        int[] bir = new int[a.length+1];
+
+        for (int i = 0; i < n; i++) {
+            bir[a[i]]++;
+        }
+
+        int maxIndex = 0;
+        int max = -1;
+
+        for (int i = 0; i < bir.length; i++) {
+            if (bir[i] > max) {
+                max = bir[i];
+                maxIndex = i;
+            }
+        }
+
+        System.out.println("Most frequent element = " + maxIndex);
+        System.out.println("Frequency = " + max);
+    }
+}
